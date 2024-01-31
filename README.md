@@ -7,6 +7,6 @@ SiteWatcher is a Go application that checks the status of a list of websites and
 To install, clone this repository and build the application using the provided Makefile:
 
 ```sh
-git clone https://github.com/yourusername/sitewatcher.git
+git clone git@github.com:divslingerx/sitewatcher.git
 cd sitewatcher
 make build
