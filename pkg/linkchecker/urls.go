@@ -1,7 +1,6 @@
 package linkchecker
 
 import (
-	"fmt"
 	"net/http"
 	"sync"
 )
@@ -20,7 +19,6 @@ func CheckURL(url string, wg *sync.WaitGroup, ch chan<- URLStatus) {
 		status = "🔴" // Red circle emoji for bad URL
 	} else {
 		defer resp.Body.Close()
-		fmt.Print(resp.StatusCode)
 		if resp.StatusCode != http.StatusOK {
 			status = "🔴" // Red circle emoji for bad URL
 		}
